@@ -1,0 +1,75 @@
+/* Existing CSS */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #00FFCC; /* Neon color */
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00FFCC; /* Neon glow */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00FFCC, 0 0 20px #FF00FF; /* Glowing text */
+}
+
+h2, p {
+    text-shadow: 0 0 10px #00FFCC;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Style for the navigation links to make them bigger and bold */
+nav a {
+    color: #00FFCC;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.5em;  /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+nav a:hover {
+    color: #FF00FF;
+}
+
+section {
+    margin: 50px 0;
+}
+
+/* Style for the select dropdown to make it bigger */
+.big-select {
+    font-size: 1.5em;  /* Increase font size */
+    padding: 10px;     /* Add padding for height */
+    width: 200px;      /* Set a width */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #00FFCC; /* Border with a color */
+    background-color: #222; /* Optional: Change background color */
+    color: #00FFCC; /* Optional: Change text color */
+}

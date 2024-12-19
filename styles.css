@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #00FFCC; /* Neon color */
-    background: url('images/background.jpg') no-repeat center center fixed;
+    background: url('images/background.gif') no-repeat center center fixed;
     background-size: cover;
     overflow-y: auto; /* Allow vertical scrolling */
     height: 100vh; /* Set height to viewport height */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>R.O.C.K.Y</h1>
+            <p class="tagline"><strong>"Empowered by Knowledge, Driven by Challenges – Bridging Technology and Innovation for a Better Tomorrow."</strong></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><strong>You can reach me at rlic89183@gmail.com or fill the form below.</strong></p>
+            <form action="send_email.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required class="big-input"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required class="big-input"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required class="big-input"></textarea><br><br>
+
+                <input type="submit" value="Send" class="submit-button">
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -22,3 +22,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+</head>
+<body>
+    <h1>Send Email</h1>
+    <form action="send_email.php" method="post">
+        <label for="to">To:</label>
+        <input type="email" id="to" name="to" required><br><br>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <input type="submit" value="Send Email">
+    </form>
+</body>
+</html>

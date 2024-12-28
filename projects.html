@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Project Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <section id="projects">
+            <div class="projects-container">
+                <!-- Repeat this block for 10 projects -->
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file1')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 2</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file2')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 3</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file3')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 4</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file4')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 5</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file5')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 6</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file6')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 7</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file7')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 8</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file8')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 9</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file9')">Download</button>
+                </div>
+
+                <div class="project">
+                    <h2>Project 10</h2>
+                    <img src="images/screenshot-placeholder.png" alt="Screenshot" class="project-image">
+                    <input type="text" placeholder="Enter link here" class="big-select">
+                    <br><br>
+                    <button onclick="download('link_to_file10')">Download</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function download(link) {
+            // This function would handle the download logic
+            window.location.href = link; // Redirects to the download link
+        }
+    </script>
+</body>
+</html>

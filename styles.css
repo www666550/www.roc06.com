@@ -77,3 +77,21 @@ section {
     color: #00FFCC; /* Optional: Text color */
 }
 
+.projects-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    gap: 20px; /* Space between project items */
+}
+
+.project {
+    max-width: 300px; /* Limit the width of each project item */
+    text-align: center; /* Center text within project item */
+}
+
+.project-image {
+    width: 100%; /* Make images responsive within their container */
+    border-radius: 10px; /* Optional: Rounded corners for images */
+}
+

@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me - My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Notification Styles */
+        .notification {
+            display: none; /* Hidden by default */
+            padding: 15px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -24,7 +37,7 @@
         <section id="contact">
             <h2>Contact Me</h2>
             <p><strong>You can reach me at rlic89183@gmail.com or fill the form below.</strong></p>
-            <form action="send_email.php" method="POST">
+            <form id="contactForm" action="send_email.php" method="POST" onsubmit="showNotification(event)">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required class="big-input"><br><br>
 
@@ -36,8 +49,18 @@
 
                 <input type="submit" value="Send" class="submit-button">
             </form>
+            <div id="notification" class="notification">Your message has been sent successfully!</div>
         </section>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function showNotification(event) {
+            event.preventDefault(); // Prevent the form from submitting for demo purposes
+            const notification = document.getElementById('notification');
+            notification.style.display = 'block'; // Show the notification
+            setTimeout(() => {
+                notification.style.display = 'none'; // Hide it after 3 seconds
+            }, 3000);
+        }
+    </script>
 </body>
 </html>
